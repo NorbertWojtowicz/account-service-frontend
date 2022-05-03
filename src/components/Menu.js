@@ -25,7 +25,7 @@ const Menu = () => {
         >
           Sign out
         </a>
-        <a href={"/"} className="list-group-item list-group-item-action">
+        <a href={"/change-password"} className="list-group-item list-group-item-action">
           Change password
         </a>
         <a
@@ -34,7 +34,7 @@ const Menu = () => {
         >
           Upload payrolls
         </a>
-        <a href={"/"} className="list-group-item list-group-item-action">
+        <a href={"/employee-payrolls"} className="list-group-item list-group-item-action">
           Display employee's payrolls
         </a>
         <a href={"/"} className="list-group-item list-group-item-action">
@@ -46,7 +46,7 @@ const Menu = () => {
         <a href={"/"} className="list-group-item list-group-item-action">
           Delete users
         </a>
-        <a href={"/"} className="list-group-item list-group-item-action">
+        <a href={"/users"} className="list-group-item list-group-item-action">
           Display information about all users
         </a>
         <a href={"/"} className="list-group-item list-group-item-action">

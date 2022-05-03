@@ -62,7 +62,7 @@ const ChangeRoleForm = () => {
           </select>
         </div>
         <button onClick={(e) => changeUserRole(e)} className="btn btn-primary">
-          Upload
+          Submit
         </button>
       </form>
     </div>
