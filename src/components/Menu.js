@@ -32,27 +32,30 @@ const Menu = () => {
           href={"/upload-payrolls"}
           className="list-group-item list-group-item-action"
         >
-          Upload payrolls
+          Upload payments
         </a>
         <a href={"/employee-payrolls"} className="list-group-item list-group-item-action">
-          Display employee's payrolls
+          Display Your payments
         </a>
-        <a href={"/"} className="list-group-item list-group-item-action">
+        <a href={"/payrolls"} className="list-group-item list-group-item-action">
+          Display payments of all users
+        </a>
+        <a href={"/payroll/update"} className="list-group-item list-group-item-action">
           Update payment information
         </a>
         <a href={"/change-role"} className="list-group-item list-group-item-action">
           Change user roles
         </a>
-        <a href={"/"} className="list-group-item list-group-item-action">
+        <a href={"/users/delete"} className="list-group-item list-group-item-action">
           Delete users
         </a>
         <a href={"/users"} className="list-group-item list-group-item-action">
           Display information about all users
         </a>
-        <a href={"/"} className="list-group-item list-group-item-action">
+        <a href={"/users/lock"} className="list-group-item list-group-item-action">
           Lock / unlock users
         </a>
-        <a href={"/"} className="list-group-item list-group-item-action">
+        <a href={"/security-events"} className="list-group-item list-group-item-action">
           Display security events
         </a>
       </ul>

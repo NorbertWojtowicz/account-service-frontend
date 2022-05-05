@@ -10,6 +10,11 @@ import ChangeRoleForm from "./components/ChangeRoleForm";
 import ChangePasswordForm from "./components/ChangePasswordForm";
 import EmployeePayrolls from "./components/EmployeePayrolls";
 import AllUsers from "./components/AllUsers";
+import DeleteUserForm from "./components/DeleteUserForm";
+import UpdatePaymentForm from "./components/UpdatePaymentForm";
+import AllPayrolls from "./components/AllPayrolls";
+import LockUserForm from "./components/LockUserForm";
+import SecurityEvents from "./components/SecurityEvents";
 
 function App() {
   return (
@@ -26,6 +31,11 @@ function App() {
             <Route exact path="/change-password" element={<ChangePasswordForm />} />
             <Route exact path="/employee-payrolls" element={<EmployeePayrolls />} />
             <Route exact path="/users" element={<AllUsers />} />
+            <Route exact path="/users/delete" element={<DeleteUserForm />} />
+            <Route exact path="/payroll/update" element={<UpdatePaymentForm/>} />
+            <Route exact path="/payrolls" element={<AllPayrolls/>} />
+            <Route exact path="/users/lock" element={<LockUserForm/>} />
+            <Route exact path="/security-events" element={<SecurityEvents/>} />
           </Routes>
         </Router>
       </div>

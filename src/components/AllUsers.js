@@ -24,6 +24,7 @@ const AllUsers = () => {
 
   return (
     <div>
+      <h6>Required any of these roles: ADMINISTRATOR</h6>
       <h1>All users</h1>
       {error !== "" ? <ErrorMessage error={error} /> : ""}
       <table className="table">
