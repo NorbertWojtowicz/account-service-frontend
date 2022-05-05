@@ -44,6 +44,7 @@ const ChangePasswordForm = () => {
 
     return (
         <div>
+            <h6>Required any of these roles: ACCOUNTANT, USER, ADMINISTRATOR</h6>
             <h1>Change your password</h1>
             {error !== "" ? <ErrorMessage error={error} /> : ""}
             {message !== "" ? <SuccessMessage message={message} /> : ""}
@@ -55,6 +56,7 @@ const ChangePasswordForm = () => {
                         className="form-control"
                         id="oPassword"
                         placeholder="Enter old password"
+                        required={true}
                     />
                 </div>
                 <div className="form-group">
@@ -64,6 +66,7 @@ const ChangePasswordForm = () => {
                         className="form-control"
                         id="nPassword"
                         placeholder="Enter new password"
+                        required={true}
                     />
                 </div>
                 <button onClick={(e) => changeUserPassword(e)} className="btn btn-primary">

@@ -46,7 +46,7 @@ const SigninForm = () => {
             placeholder="Enter email"
           />
         </div>
-        <div className="form-group" style={{ marginTop: "1em" }}>
+        <div className="form-group">
           <label htmlFor="password">Password</label>
           <input
             type="password"
@@ -59,7 +59,6 @@ const SigninForm = () => {
         <button
           onClick={(e) => signin(e)}
           className="btn btn-primary"
-          style={{ marginTop: "1em" }}
         >
           Sign in
         </button>

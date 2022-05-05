@@ -26,16 +26,17 @@ const ChangeRoleForm = () => {
           password: localStorage.getItem("password"),
         },
       })
-      .then((res) => setMessage(res.data.message))
+      .then((res) => setMessage("Role updated successfully"))
       .catch((err) => setError(() => MessageUtility.getErrorFromResponse(err)));
   }
 
   return (
     <div>
+      <h6>Required any of these roles: ADMINISTRATOR</h6>
+      <h1>Change user roles</h1>
+      {error !== "" ? <ErrorMessage error={error} /> : ""}
+      {message !== "" ? <SuccessMessage message={message} /> : ""}
       <form id="change-role-form">
-        <h1>Change user roles</h1>
-        {error !== "" ? <ErrorMessage error={error} /> : ""}
-        {message !== "" ? <SuccessMessage message={message} /> : ""}
         <div className="form-group">
           <label htmlFor="email">Email address of employee</label>
           <input
@@ -43,6 +44,7 @@ const ChangeRoleForm = () => {
             className="form-control"
             id="email"
             placeholder="Enter email of employee"
+            required={true}
           />
         </div>
         <div className="form-group">

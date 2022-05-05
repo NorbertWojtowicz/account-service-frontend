@@ -23,7 +23,8 @@ const EmployeePayrolls = () => {
 
   return (
     <div>
-      <h1>Employee payrolls</h1>
+      <h6>Required any of these roles: ACCOUNTANT, USER, ADMINISTRATOR, AUDITOR</h6>
+      <h1>Employee payments</h1>
       {error !== "" ? <ErrorMessage error={error} /> : ""}
       <table className="table">
         <thead>

@@ -38,3 +38,15 @@
     transform: rotate(360deg);
   }
 }
+
+h6 {
+  color: orangered;
+}
+
+.form-group {
+  margin-top: 1em;
+}
+
+.btn {
+  margin-top: 1em;
+}

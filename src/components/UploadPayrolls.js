@@ -34,7 +34,8 @@ const UploadPayrolls = () => {
 
   return (
     <div>
-      <h1>Upload payrolls</h1>
+      <h6>Required any of these roles: ACCOUNTANT</h6>
+      <h1>Upload payment</h1>
       {error !== "" ? <ErrorMessage error={error} /> : ""}
       {message !== "" ? <SuccessMessage message={message} /> : ""}
       <form id={"upload-payrolls-form"}>
@@ -45,6 +46,7 @@ const UploadPayrolls = () => {
             className="form-control"
             id="email"
             placeholder="Enter email of employee"
+            required={true}
           />
         </div>
         <div className="form-group">
@@ -54,6 +56,7 @@ const UploadPayrolls = () => {
             className="form-control"
             id="salary"
             placeholder="Enter salary"
+            required={true}
           />
         </div>
         <div className="form-group">
@@ -63,6 +66,7 @@ const UploadPayrolls = () => {
             className="form-control"
             id="period"
             placeholder="Enter period like: 01-2021"
+            required={true}
           />
         </div>
         <button onClick={(e) => uploadPayrolls(e)} className="btn btn-primary">

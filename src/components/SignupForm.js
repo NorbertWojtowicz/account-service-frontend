@@ -30,10 +30,10 @@ const SignupForm = () => {
     <div>
       {error !== "" ? <ErrorMessage error={error} /> : ""}
       {message !== "" ? <SuccessMessage message={message} /> : ""}
-      <form id={"signupForm"}>
+      <form id="signupForm">
         <h1>Sign up!</h1>
         <div className="form-group">
-          <label htmlFor="fName" style={{ marginTop: "1em" }}>
+          <label htmlFor="fName">
             First name
           </label>
           <input
@@ -45,7 +45,7 @@ const SignupForm = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="lName" style={{ marginTop: "1em" }}>
+          <label htmlFor="lName">
             Last name
           </label>
           <input
@@ -56,7 +56,7 @@ const SignupForm = () => {
             placeholder="Enter last name"
           />
         </div>
-        <div className="form-group" style={{ marginTop: "1em" }}>
+        <div className="form-group">
           <label htmlFor="email">Email address</label>
           <input
             type="email"
@@ -66,7 +66,7 @@ const SignupForm = () => {
             placeholder="Enter email"
           />
         </div>
-        <div className="form-group" style={{ marginTop: "1em" }}>
+        <div className="form-group">
           <label htmlFor="password">Password</label>
           <input
             type="password"
@@ -79,7 +79,6 @@ const SignupForm = () => {
         <button
           onClick={(e) => signup(e)}
           className="btn btn-primary"
-          style={{ marginTop: "1em" }}
         >
           Sign up
         </button>
