@@ -25,6 +25,7 @@ const SecurityEvents = () => {
     <div>
       <h6>Required any of these roles: AUDITOR</h6>
       <h1>Security events</h1>
+      <h5>(Newest -> oldest)</h5>
       {error !== "" ? <ErrorMessage error={error} /> : ""}
       <table className="table">
         <thead>
@@ -38,7 +39,7 @@ const SecurityEvents = () => {
           </tr>
         </thead>
         <tbody>
-          {events.map((event) => (
+          {events.slice(0).reverse().map((event) => (
             <tr>
               <th>{++eventsCounter}</th>
               <th scope="row">

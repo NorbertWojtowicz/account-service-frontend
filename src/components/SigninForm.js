@@ -22,7 +22,7 @@ const SigninForm = () => {
   }
 
   async function handleLogin(res, loginData) {
-    if (res.data.path === "/success") {
+    if (res.data.path.includes("/success")) {
       localStorage.setItem("username", loginData.username);
       localStorage.setItem("password", loginData.password);
       window.location.reload();

@@ -1,4 +1,5 @@
 const NavBar = () => {
+  document.title = "Account service";
   const username = localStorage.getItem("username");
   const password = localStorage.getItem("password");
 

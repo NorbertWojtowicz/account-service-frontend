@@ -53,7 +53,7 @@ const ChangeRoleForm = () => {
             <option>ACCOUNTANT</option>
             <option>USER</option>
             <option>ADMINISTRATOR</option>
-            <option>ADUDITOR</option>
+            <option>AUDITOR</option>
           </select>
         </div>
         <div className="form-group">
