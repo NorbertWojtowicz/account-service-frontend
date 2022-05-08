@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  width: 40%;
+  margin: 2em auto 0 auto;
 }
 
 .App-logo {
@@ -35,4 +37,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h6 {
+  color: orangered;
+}
+
+.form-group {
+  margin-top: 1em;
+}
+
+.btn {
+  margin-top: 1em;
 }
